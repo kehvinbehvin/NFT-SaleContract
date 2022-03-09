@@ -44,7 +44,7 @@ contract MissionDAOSale is MultiWhitelist {
         _placeholderURIs[NFTType.GENESIS] = placeholderURIs[0];
         // GENESIS
         typeCounter[NFTType.GENESIS] = 1;
-        typeMax[NFTType.GENESIS] = 50;
+        typeMax[NFTType.GENESIS] = 2500;
 
         // PURCHASE LIMIT PER WALLET
         purchaseLimit = _purchaseLimit;

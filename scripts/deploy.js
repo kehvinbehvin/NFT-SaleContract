@@ -16,7 +16,7 @@ async function main() {
 
     // We get the contract to deploy
     const Sale = await hre.ethers.getContractFactory("MissionDAOSale");
-    const sale = await Sale.deploy(NFT_CONTRACT_ADDRESS,USDC_TESTNET_CONTRACT_ADDRESS,["2000000000000000000"],["ipfs://QmbzAgdALBZSchqyvvDufjCqqXyqqtq3eSRZQxipKYz5EY/pre-reveal.json"],5);
+    const sale = await Sale.deploy(NFT_CONTRACT_ADDRESS,USDC_TESTNET_CONTRACT_ADDRESS,["300000000"],["ipfs://QmbzAgdALBZSchqyvvDufjCqqXyqqtq3eSRZQxipKYz5EY/pre-reveal.json"],5);
 
     await sale.deployed();
 
