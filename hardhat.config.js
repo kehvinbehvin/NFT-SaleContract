@@ -10,17 +10,17 @@ const { NODE_PROVIDER_API_URL, SIGNER_PRIVATE_KEY, POLYGONSCAN_API_KEY } = proce
 
 
 module.exports = {
-  defaultNetwork: "polygon_mumbai",
+  defaultNetwork: "matic",
   networks: {
     hardhat: {},
-    polygon_mumbai: {
+    matic: {
       url: NODE_PROVIDER_API_URL,
       accounts: [`0x${SIGNER_PRIVATE_KEY}`]
     }
   },
   etherscan: {
     apiKey: {
-      polygonMumbai: POLYGONSCAN_API_KEY
+      polygon: POLYGONSCAN_API_KEY
     }
   },
   solidity: {
